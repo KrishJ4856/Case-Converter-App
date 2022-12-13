@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Converter App</title>
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="./css/loader.css">
+    <script defer src="./code/index.js"></script>
+</head>
+<body class="p-0 m-0 box-border flex flex-col w-screen h-screen overflow-hidden">
+    <header class="mb-5">
+        <nav class="flex flex-row m-5 w-full h-20">
+            <div id="logo" class="basis-1/5 text-5xl font-sans font-bold hover:cursor-pointer">K.</div>
+            <div id="title" class="basis-4/5 flex flex-col relative">
+                <h1 class="text-3xl font-mono">Case Converter App</h1>
+                <h3 class="text-2xl font-bold">Convert capitalised messages to normal messages</h3>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <label for="inputTextArea" class="text-2xl font-mono font-bold m-5">Enter the text</label> 
+        <button id = 'enter'class="bg-white hover:bg-gray-500 hover:text-white text-gray-900 font-semibold py-2 px-4 border border-gray-400 rounded shadow ml-5">
+            Enter
+        </button>
+        <button id = "messageEnter" class="bg-red-500 text-white font-semibold py-2 px-4 border border-gray-400 rounded shadow ml-5 hidden">
+            Please Enter Text
+        </button>
+        <textarea id="inputTextArea" cols="60" rows="6" class="w:auto h:auto border-2 border-slate-500 border-solid block m-5 p-5 active:outline active:outline-1 active:outline-purple-600"></textarea>
+        <h2 class="ml-5 text-2xl font-mono font-bold w-200">Here's the text in normal case</h1>
+        <textarea id="outputTextArea" readonly cols="60" rows="6" class="border-2 border-slate-500 border-solid block m-5 p-5 active:outline active:outline-1 active:outline-purple-600"></textarea>
+        <div id="buttons" class="flex flex-row w-auto h-auto">
+            <button id = 'copyText'class="bg-white hover:bg-gray-500 hover:text-white text-gray-900 font-semibold py-2 px-4 border border-gray-400 rounded shadow ml-5">
+                Copy To ClipBoard
+            </button>
+            <button id = "messageCopy" class="bg-green-500 text-white font-semibold py-2 px-4 border border-gray-400 rounded shadow ml-5 hidden">
+                Copied!
+            </button>
+        </div>
+    </main>
+</body>
+</html>
+
