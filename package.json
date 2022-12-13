@@ -1,0 +1,19 @@
+{
+  "name": "case-converter-app",
+  "version": "1.0.0",
+  "description": "This is a simple front end project to convert the cases of the string/text entered by the user ",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i input.css -o ./css/output.css",
+    "watch:css": "tailwindcss -i input.css -o ./css/output.css --watch"
+  },
+  "keywords": [
+    "Case",
+    "Converter"
+  ],
+  "author": "=",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
